@@ -13,13 +13,13 @@
 	{{ block "head" . }}{{ end }}
 </head>
 
-<body>
+<body class="">
 	{{ partial "dark_mode_js.html" .}}
 
 	<header>
 		{{ partial "header.html" . }}
 	</header>
-	<main>
+	<main class="">
 		{{ block "main" . }}{{ end }}
 	</main>
 	<footer>

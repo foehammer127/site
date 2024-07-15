@@ -554,10 +554,4 @@ video {
   --tw-contain-style:  ;
 }
 
-.block {
-  display: block;
-}
-
-.inline {
-  display: inline;
-}
+@tailwind utilites;
