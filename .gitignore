@@ -1,0 +1,5 @@
+# Direnv Items
+.direnv/
+
+# Nix build results.
+result

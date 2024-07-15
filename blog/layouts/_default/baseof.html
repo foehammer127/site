@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="{{.Site.LanguageCode}}">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>{{ block "title" . }}Needs Title{{ end }} - {{ .Site.Title }}</title>
+
+	{{ partial "stylesheets.html" . }}
+
+	{{ block "head" . }}{{ end }}
+</head>
+
+<body>
+	{{ partial "dark_mode_js.html" .}}
+
+	<header>
+		{{ partial "header.html" . }}
+	</header>
+	<main>
+		{{ block "main" . }}{{ end }}
+	</main>
+	<footer>
+		{{ partial "footer.html" . }}
+	</footer>
+</body>
+
+</html>
