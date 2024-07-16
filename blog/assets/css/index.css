@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 /*
 ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
@@ -135,7 +137,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Roboto Mono, monospace;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -446,7 +448,10 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+a {
+}
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -500,7 +505,7 @@ video {
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,10 +559,89 @@ video {
   --tw-contain-style:  ;
 }
 
-.block {
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.block{
   display: block;
 }
 
-.inline {
+.inline{
   display: inline;
+}
+
+.flex{
+  display: flex;
+}
+
+.max-w-4xl{
+  max-width: 56rem;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.font-serif{
+  font-family: Libre Baskerville, serif;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-blue-800{
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.text-blue-950{
+  --tw-text-opacity: 1;
+  color: rgb(23 37 84 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
+}
+
+.visited\:text-purple-400:visited{
+  color: rgb(192 132 252 );
+}
+
+.visited\:text-purple-800:visited{
+  color: rgb(107 33 168 );
+}
+
+.visited\:text-blue-800:visited{
+  color: rgb(30 64 175 );
+}
+
+.visited\:text-blue-950:visited{
+  color: rgb(23 37 84 );
 }
